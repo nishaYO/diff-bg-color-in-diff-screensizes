@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>using media queries</title>
+    <style>
+      body {
+        /*initializing flexbox*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .txt {
+        text-shadow: 1px 1px 2px rgb(43, 241, 248), 0 0 1em rgb(11, 11, 23),
+          0 0 0.2em rgb(4, 4, 7);
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+          cursive;
+      }
+
+      /* predefined bgcolor for large size devices */
+      body {
+        background-color: rgb(176, 234, 106); /*light green*/
+      }
+
+      /* bgcolor for medium size devices */
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: rgb(99, 167, 255); /*sky blue*/
+        }
+      }
+
+      /* bgcolor for small size devices */
+      @media screen and (max-width: 576px) {
+        body {
+          background-color: rgb(255, 99, 99); /*orange-red*/
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- creating a text div inside the body-->
+    <div class="txt">HELLO JI!</div>
+  </body>
+</html>
